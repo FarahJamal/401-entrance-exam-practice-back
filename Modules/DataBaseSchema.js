@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 //mongoose.connect('mongodb://localhost:27017/exam', { useNewUrlParser: true, useUnifiedTopology: true });
 //mongodb+srv://exam:<password>@cluster0.rpjcy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
-mongoose.connect('mongodb+srv://exam:exam@cluster0.rpjcy.mongodb.net/exam?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://exam:exam@cluster0.x7plr.mongodb.net/exam?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 
 const db = mongoose.connection;
 const myFavChar = new mongoose.Schema({
@@ -27,7 +27,7 @@ function weekSeeds() {
         email: 'farahsarese@gmail.com',
      Chars:[]
     })
-    //user1.save();
+    user1.save();
 
 
     const user2 = new Users({
@@ -35,7 +35,7 @@ function weekSeeds() {
         Chars:[]
 
     })
-    //user2.save();
+    user2.save();
 
 }
 
